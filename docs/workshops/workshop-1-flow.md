@@ -76,7 +76,43 @@ Generate a PRD for a simple task management application that:
 
 ---
 
-### 4. Technical Specification for Epic 1
+### 4. Epic Breakdown
+
+**Workflow**: `/bmad:bmm:workflows:prd`
+
+**Prompt Used**:
+```
+/bmad:bmm:workflows:prd
+
+Generate epics.md from the solution architecture with the following structure for each epic:
+
+1. Epic name, scope, and goals
+2. Relevant user stories covered in PRD, and identify any additional stories needed beyond what's in the solution architecture
+3. Dependencies
+4. Key deliverables and acceptance criteria
+5. Success metrics
+
+IMPORTANT: The solution architecture may not have all necessary user stories defined to complete implementation of each epic. You should identify and list additional user stories you believe are needed beyond what's explicitly mentioned in the solution architecture.
+
+DO NOT include:
+- Granular implementation details (the tech-spec workflow will generate these)
+- Detailed component specifications
+- Technical implementation stories
+
+Format each epic as a self-contained section that the tech-spec workflow can use as input to generate detailed technical specifications and implementation stories.
+
+@docs/solution-architecture.md
+```
+
+**Review**: Validate epic breakdown covers all implementation phases
+
+**Outcome**: Epic definitions provide clear scope boundaries for tech spec generation
+
+**Output**: `docs/epics.md`
+
+---
+
+### 5. Technical Specification for Epic 1
 
 **Workflow**: `/bmad:bmm:workflows:tech-spec`
 
@@ -86,6 +122,7 @@ Generate a PRD for a simple task management application that:
 
 Generate tech spec for epic 1
 
+@docs/epics.md
 @docs/solution-architecture.md
 ```
 
@@ -103,6 +140,8 @@ PRD Creation (/bmad:bmm:workflows:prd)
 UX Specification (/bmad:bmm:workflows:ux-spec)
     ↓
 Solution Architecture (/bmad:bmm:workflows:solution-architecture)
+    ↓
+Epic Breakdown (/bmad:bmm:workflows:prd)
     ↓
 Tech Spec for Epic 1 (/bmad:bmm:workflows:tech-spec)
 ```

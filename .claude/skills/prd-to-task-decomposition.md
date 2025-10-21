@@ -177,13 +177,18 @@ For a Personal TaskBoard application with 10 FRs and 11 NFRs, you might create:
 
 Cross-cutting: NFR3, NFR4, NFR5 (TypeScript strict, ESLint, >70% unit test coverage) apply to ALL tasks
 
+**Note on Requirement Overlap:**
+FR1 (create task with title and note) appears in both Task 3 (Core Data Models) and Task 6 (Task Creation UI). This is intentional and valid - requirements can span multiple architectural layers. Task 3 implements the data model and business logic for tasks, while Task 6 implements the user interface for creating tasks. Both are necessary to fully satisfy FR1.
+
 ## When to Use This Skill
 
 Use this skill when:
-- Starting a Large Project and need to create the high-level project task breakdown (BMAd Planning Phase, Step 5)
-- Starting a Medium Project and need to understand if the scope warrants multiple tasks or can be handled as a single spec
+- Starting a **Large Project** and need to create the high-level project task breakdown (BMAd Planning Phase, Step 5)
+- Evaluating if a project is Medium or Large (run decomposition to see if it naturally yields 1 cohesive task or many tasks)
 - Reviewing an existing task breakdown to ensure complete requirement coverage
 - A task seems too large and you need to determine how to split it
+
+**Note:** Medium Projects (BMAd Spec Engineering approach) typically result in a single spec file rather than multiple tasks. If this skill produces 2+ distinct tasks, the project is likely Large, not Medium.
 
 ## What This Skill Produces
 

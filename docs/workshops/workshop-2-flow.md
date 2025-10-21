@@ -12,7 +12,7 @@ Before starting Workshop 2, ensure the following artifacts exist from Workshop 1
 - `docs/PRD.md`
 - `docs/ux-specification.md`
 - `docs/solution-architecture.md`
-- `docs/tech-spec-epic-1-foundation.md`
+- `docs/tech-spec-epic-1.md`
 
 ---
 
@@ -36,7 +36,7 @@ Create the next story from Epic 1
 ```
 
 **How It Works**:
-- Workflow automatically discovers `tech-spec-epic-1-foundation.md` using pattern matching
+- Workflow automatically discovers `tech-spec-epic-1.md` using pattern matching
 - Automatically loads all architecture documents from `docs/` folder
 - Reads `epics.md` to verify the next story is planned (will HALT if not enumerated)
 - Pulls requirements from PRD.md as fallback

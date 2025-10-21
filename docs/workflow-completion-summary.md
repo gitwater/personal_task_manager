@@ -84,7 +84,7 @@ The solution architecture workflow has been successfully completed for the Perso
 
 ### 3. Tech Specs
 **Files:**
-- `/docs/tech-spec-epic-1-foundation.md` ✅
+- `/docs/tech-spec-epic-1.md` ✅
 - `/docs/tech-spec-implementation-guide.md` ✅
 
 **Coverage:**
@@ -270,7 +270,7 @@ All 7 user stories have complete implementation paths:
    npx drizzle-kit studio  # Database visible
    ```
 
-**Reference:** See `/docs/tech-spec-epic-1-foundation.md` for detailed steps
+**Reference:** See `/docs/tech-spec-epic-1.md` for detailed steps
 
 ### Week 1 Implementation Plan
 
@@ -351,7 +351,7 @@ All generated documents are available in `/docs/`:
 3. **project-workflow-analysis.md** - Project analysis and classification (updated)
 4. **solution-architecture.md** - Complete solution architecture ⭐
 5. **cohesion-check-report.md** - Architecture validation report
-6. **tech-spec-epic-1-foundation.md** - Detailed spec for Epic 1
+6. **tech-spec-epic-1.md** - Detailed spec for Epic 1
 7. **tech-spec-implementation-guide.md** - Implementation guide for all epics
 8. **workflow-completion-summary.md** - This document
 

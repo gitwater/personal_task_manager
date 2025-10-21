@@ -128,7 +128,7 @@ Generate tech spec for epic 1
 
 **Review**: Quick review of the generated technical specification
 
-**Output**: `docs/tech-spec-epic-1-foundation.md`
+**Output**: `docs/tech-spec-epic-1.md`
 
 ---
 
